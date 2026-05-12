@@ -1,0 +1,596 @@
+
+html{
+
+cursor: url('cursor.png'), auto;
+
+}
+
+
+
+body{
+
+background-image: url("lemonbg.png");
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.nav{
+display: flex;
+justify-content: center;
+
+padding: 10px;
+margin: 10px;
+background-color: #FFF700;
+
+
+}
+
+
+.navbarlinks{
+
+display: flex;
+justify-content: center;
+padding: 10px;
+margin: 10px;
+
+text-align: center;
+background-color: #FFF700;
+text-decoration: none;
+color: red;
+font-size: 20px;
+
+
+}
+
+
+.nav a:hover{
+text-decoration: none;
+font-size: 20px;
+border-radius: 10px;
+box-shadow: 6px 6px 28px 0px black;
+
+
+
+}
+
+
+
+h1{
+
+
+display: flex;
+justify-content: center;
+color: red;
+font-size: 50px;
+
+
+}
+
+
+.newsstory{
+
+background-color: cyan;
+text-decoration: none;
+border: 5px solid black;
+margin: 20px 200px;
+
+}
+
+
+.newsstory p{
+
+
+display: flex;
+justify-content: center;
+
+padding: 20px 10px;
+margin: 20px 10px;
+
+
+color: green;
+font-size: 20px;
+text-align: center;
+
+}
+
+
+
+.newsstory img{
+
+margin-left: auto;
+margin-right: auto;
+display: block;
+padding: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+padding: 40px;
+margin: -10px;
+background-color: #FFF700;
+text-align: center;
+
+
+
+
+}
+
+
+.welcometext{
+
+background-color: #FFF700;
+padding: 40px;
+margin: 40px 300px;
+text-align: center;
+font-size: 20px;
+border: 5px solid black;
+
+}
+
+.welcometext a{
+
+text-decoration: none;
+color: blue;
+
+}
+
+
+
+.stats{
+
+background-color: #FFF700;
+padding: 40px;
+margin: 40px 500px;
+text-align: center;
+font-size: 20px;
+border: 5px solid black;
+
+
+}
+
+
+.stats h4{
+
+text-align: center;
+
+
+}
+
+
+
+
+
+
+.stats p{
+display: flex;
+justify-content: center;
+flex-direction: row;
+background-color: orange;
+margin: 10px 200px;
+padding: 10px;
+border: 5px solid black;
+
+}
+
+
+
+
+.donolemon button{
+align-items: center;
+background-color: orange;
+margin: 20px;
+padding: 10px;
+border: 5px solid black;
+
+
+
+}
+
+
+.donolemon{
+
+background-color: #FFF700;
+padding: 40px;
+margin: 40px 50px;
+text-align: center;
+font-size: 20px;
+border: 5px solid black;
+
+
+
+
+}
+
+
+
+
+button{
+
+cursor: pointer;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1700px) {
+
+
+
+
+.welcometext{
+
+
+padding: 40px;
+margin: 40px 30px;
+
+font-size: 20px;
+
+
+}
+
+
+
+
+.stats{
+
+
+padding: 40px;
+margin: 40px 50px;
+
+font-size: 20px;
+
+
+
+}
+
+
+.stats p{
+
+
+
+margin: 10px 20px;
+padding: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+
+
+.newsstory{
+
+
+
+margin: 20px 30px;
+
+}
+
+
+.newsstory p{
+
+
+font-size: 16px;
+
+
+}
+
+
+
+.newsstory img{
+
+margin-left: auto;
+margin-right: auto;
+display: block;
+padding: 10px;
+
+
+}
+
+
+
+
+}
+
+
+@media only screen and (max-width: 650px){
+
+.stats{
+
+
+padding: 20px;
+margin: 20px 25px;
+
+font-size: 15px;
+
+
+
+}
+
+
+.stats p{
+
+
+
+margin: 5px 10px;
+padding: 5px;
+
+
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 550px) {
+
+.nav{
+
+
+padding: 0px;
+margin: 0px;
+
+
+
+}
+
+
+.navbarlinks{
+
+
+padding: 5px;
+margin: 5px;
+
+
+
+font-size: 15px;
+
+
+}
+
+
+.nav a:hover{
+
+font-size: 15px;
+border-radius: 5px;
+box-shadow: 3px 3px 14px 0px black;
+	
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 458px) {
+
+h1{
+font-size: 25px;
+
+
+}
+
+.welcometext{
+
+
+padding: 20px;
+margin: 20px 15px;
+
+font-size: 15px;
+
+
+}
+
+
+
+
+.stats{
+
+
+padding: 10px;
+margin: 10px 12.5px;
+
+font-size: 15px;
+
+
+
+}
+
+
+.stats p{
+
+
+
+margin: 2.5px 5px;
+padding: 2.5px;
+
+
+}
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 350px){
+
+
+.donolemon button{
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+align-items: center;
+
+
+
+}
+
+
+.donolemon{
+padding: 40px;
+margin-left: auto;
+margin-right: auto;
+font-size: 20px;
+
+
+}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 300px) {
+
+.stats{
+
+
+padding: 5px;
+margin: 5px 6.25px;
+
+font-size: 15px;
+
+
+
+}
+
+
+.stats p{
+
+
+
+margin: 1.25px 2.5px;
+padding: 1.25px;
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
