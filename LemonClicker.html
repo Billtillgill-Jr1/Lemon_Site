@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lemon Clicker</title>
+
+
+<link rel="stylesheet" href="lemonsite.css">
+
+<link rel="icon" type="x-icon" href="lemon_spin.ico">
+
+<style>
+
+
+h3{
+
+color: red;
+background-color: #FFF700;
+padding: 10px;
+margin: 10px 650px;
+display: flex;
+justify-content: center;
+border: 5px solid black;
+
+
+}
+
+
+img{
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+#upam{
+
+display: none;
+
+}
+
+
+#mult{
+
+display: none;
+}
+
+#autoam{
+display: none;
+
+}
+
+#clickme button{
+padding: 5px;
+margin: 5px;
+width: 25%;
+color: red;
+background-color: #FFF700;
+font-size: 15px;
+
+}
+
+#clickme{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+#clickup button{
+padding: 5px;
+margin: 5px;
+width: 15%;
+color: red;
+background-color: #FFF700;
+font-size: 15px;
+text-wrap: wrap;
+
+}
+
+
+#clickup{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+button{
+padding: 5px;
+margin: 5px;
+width: 25%;
+color: red;
+background-color: #FFF700;
+font-size: 15px;
+
+}
+
+#multup{
+
+display: none;
+
+}
+
+.hid{
+
+
+display: none;
+
+
+}
+
+#multclick{
+
+display: none;
+
+
+}
+
+.hid2{
+
+display: none;
+
+}
+
+.clickH1{
+
+display: flex;
+
+}
+
+.disc{
+text-align: center;
+margin: 10px 650px;
+padding: 10px;
+background-color: #FFF700;
+color: red;
+font-size: 20px;
+border: 5px solid black;
+
+}
+
+
+#upmultxTV{
+
+display: none;
+
+
+}
+
+
+#clicksamounttext{
+background-color: #FFF700;
+margin: 10px 0px 10px 10px;
+padding: 5px 10px 5px;
+border-top: 5px solid black;
+border-bottom: 5px solid black;
+border-left: 5px solid black;
+
+}
+
+#count{
+
+background-color: #FFF700;
+margin: 10px 0px 10px;
+padding: 5px 10px 5px;
+border-top: 5px solid black;
+border-bottom: 5px solid black;
+border-right: 5px solid black;
+
+
+}
+
+
+@media only screen and (max-width: 1700px) {
+
+
+.disc{
+margin: 10px 65px;
+padding: 10px;
+font-size: 20px;
+
+
+}
+
+h3{
+padding: 10px;
+margin: 10px 65px;
+
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+#clickup button{
+width: 25%;
+
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 670px) {
+
+
+#clickup button{
+
+text-wrap: wrap;
+font-size: 10px;
+width: 40%;
+
+}
+
+
+button{
+
+text-wrap: wrap;
+font-size: 10px;
+
+
+}
+
+
+button p{
+
+text-wrap: wrap;
+font-size: 10px;
+
+
+}
+
+
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<h1>Lemon Clicker</h1>
+
+
+<div class="nav">
+
+<p><a class="navbarlinks" href="LemonNews.html">Local News</a></p>
+<p><a class="navbarlinks" href="EverythingLemons.html">Everything Lemons</a></p>
+<p><a class="navbarlinks" href="Jointhecult.html">Join The Cult</a></p>
+<p><a class="navbarlinks" href="index.html">Home Page</a></p>
+
+</div>
+
+<br>
+<div class="clickH1">
+<h1 id="clicksamounttext">Clicks:  </h1>
+<h1 id="count"> 0</h1>
+</div>
+
+
+<h1 id="upam">0</h1>
+<h1 id="mult">0</h1>
+<h1 id="autoam">0</h1>
+<h1 id="multclick">0</h1>
+<h1 id="upmultxTV">0</h1>
+
+
+<div id="clickme">
+<button onclick="incount()">Click Me!</button>
+</div>
+
+
+
+<div id="clickup">
+<br>
+<button onclick="upgrade()" class="up10">Upgrade Clicks By 1! <br> Cost: <p id="cost10">10</p></button>
+<br>
+<button onclick="upgrade100()" class="up100">Upgrade Clicks by 10! <br> Cost: <p id="cost100">100</p></button>
+<br>
+<button onclick="upgrade1000()" class="up1k">Upgrade Clicks by 100! <br> Cost: <p id="cost1k">1000</p></button>
+<br>
+<button onclick="upgrade10k()" class="up10k">Upgrade Clicks by 1000! <br> Cost: <p id="cost10k">10k</p></button>
+<br>
+<button onclick="upgrade100k()" class="up100k">Upgrade Clicks by 10k! <br> Cost: <p id="cost100k">100k</p></button>
+<br>
+<button onclick="upgrade1m()" class="up1m">Upgrade Clicks by 100k! <br> Cost: <p id="cost1m">1M</p></button>
+<br>
+<button onclick="upgrade10m()" class="up10m">Upgrade Clicks by 1M <br> Cost: <p id="cost10m">10M</p></button>
+<br>
+<button onclick="upgrade100m()" class="up100m">Upgrade Clicks by 10M <br> Cost: <p id="cost100m">100M</p></button>
+<br>
+<button onclick="upgrade1B()" class="up1b">Upgrade Clicks by 100M <br> Cost: <p id="cost1b">1B</p></button>
+<br>
+<button onclick="upgrade10B()" class="up10b">Upgrade Clicks by 1B <br> Cost: <p id="cost10b">10B</p></button>
+<br>
+<button onclick="upgrade100B()" class="up100b">Upgrade Clicks by 10B <br> Cost: <p id="cost100b">100B</p></button>
+<br>
+<button onclick="upgrade1T()" class="up1t">Upgrade Clicks by 100B <br> Cost: <p id="cost1t">1T</p></button>
+<br>
+<button onclick="upgrade10T()" class="up10t">Upgrade Clicks by 1T <br> Cost: <p id="cost10t">10T</p></button>
+<br>
+<button onclick="upgrade100T()" class="up100t">Upgrade Clicks by 10T <br> Cost: <p id="cost100t">100T</p></button>
+<br>
+<button onclick="upgrade1Q()" class="up1q">Upgrade Clicks by 100T <br> Cost: <p id="cost1q">1Q</p></button>
+<br>
+<button onclick="upgrade10Q()" class="up10q">Upgrade Clicks by 1Q <br> Cost: <p id="cost10q">10Q</p></button>
+<br>
+<button onclick="upgrade100Q()" class="up100q">Upgrade Clicks by 10Q <br> Cost: <p id="cost100q">100Q</p></button>
+<br>
+
+
+
+
+
+</div>
+
+<button onclick="auto()" class="hidden">Auto Clicker Upgrade! Activates every 5 seconds! <br> Cost: 100k</button>
+<br>
+<button onclick="multxT()" class="hidden2">Multiply your Clicks by 2 every 30 Seconds! <br> Cost: 1M</button>
+<br>
+<button onclick="upmultadd()" class="hid"></button>
+<br>
+<button onclick="upmult30()" class="hid"></button>
+
+
+
+
+
+
+<img src="lemon_spin.gif" id="lemon_1" width="25%">
+
+<h3>There are 10 different Lemon Gifs, upgrade to find them all!</h3>
+<br>
+
+<h4 class="disc"> Disclaimer: <br>This is a small project I have been working on for a few weeks, 
+it is very basic and is nowhere <br>near a final product. I may or may not continue to work on it in my 
+freetime. But anyway enjoy what I made. <br><br> The Dev, Billtillgill </h4>
+
+
+
+<script>
+
+var cost10 = 10
+var cost100 = 100
+var cost1k = 1000
+var cost10k = 10000
+var cost100k = 100000
+var cost1m = 1000000
+var cost10m = 10000000
+var cost100m = 100000000
+var cost1b = 1000000000
+var cost10b = 10000000000
+var cost100b = 100000000000
+var cost1t = 1000000000000
+var cost10t = 10000000000000
+var cost100t = 100000000000000
+var cost1q = 1000000000000000
+var cost10q = 10000000000000000
+var cost100q = 100000000000000000
+
+
+var mult = 0
+
+var upam = 0
+
+var count = 0
+
+function incount(){
+    count = mult + count + 1;
+    document.getElementById("count").innerText = count;
+
+    document.getElementById("cost10").innerText = cost10;
+    document.getElementById("cost100").innerText = cost100;
+    document.getElementById("cost1k").innerText = cost1k;
+    document.getElementById("cost10k").innerText = cost10k;
+    document.getElementById("cost100k").innerText = cost100k;
+    document.getElementById("cost1m").innerText = cost1m;
+    document.getElementById("cost10m").innerText = cost10m;
+    document.getElementById("cost100m").innerText = cost100m;
+    document.getElementById("cost1b").innerText = cost1b;
+    document.getElementById("cost10b").innerText = cost10b;
+    document.getElementById("cost100b").innerText = cost100b;
+    document.getElementById("cost1t").innerText = cost1t;
+    document.getElementById("cost10t").innerText = cost10t;
+    document.getElementById("cost100t").innerText = cost100t;
+    document.getElementById("cost1q").innerText = cost1q;
+    document.getElementById("cost10q").innerText = cost10q;
+    document.getElementById("cost100q").innerText = cost100q;
+
+
+
+    if (count >= 1000){
+
+    const element = document.querySelector('.up10');
+    element.classList.add('hid');
+
+
+    }
+    
+    if (count >= 10000){
+
+    const element = document.querySelector('.up100');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 100000){
+
+    const element = document.querySelector('.up1k');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 1000000){
+
+    const element = document.querySelector('.up10k');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 10000000){
+
+    const element = document.querySelector('.up100k');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 100000000){
+
+    const element = document.querySelector('.up1m');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 1000000000){
+
+    const element = document.querySelector('.up10m');
+    element.classList.add('hid');
+
+
+    }
+
+    
+
+    if (count >= 10000000000){
+
+    const element = document.querySelector('.up100m');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 100000000000){
+
+    const element = document.querySelector('.up1b');
+    element.classList.add('hid');
+
+
+    }
+
+    
+
+    if (count >= 1000000000000){
+
+    const element = document.querySelector('.up10b');
+    element.classList.add('hid');
+
+
+    }
+
+
+    if (count >= 10000000000000){
+
+    const element = document.querySelector('.up100b');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 100000000000000){
+
+    const element = document.querySelector('.up1t');
+    element.classList.add('hid');
+
+
+    }
+
+
+    if (count >= 1000000000000000){
+
+    const element = document.querySelector('.up10t');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 10000000000000000){
+
+    const element = document.querySelector('.up100t');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 100000000000000000){
+
+    const element = document.querySelector('.up1q');
+    element.classList.add('hid');
+
+
+    }
+
+    if (count >= 1000000000000000000){
+
+    const element = document.querySelector('.up10q');
+    element.classList.add('hid');
+
+
+    }
+
+
+
+
+
+
+
+
+
+   var lemimg = document.getElementById("lemon_1");
+    if (upam === 1){
+        
+        lemimg.src = "lemon_spin.gif";
+        
+    }
+    if (upam >= 25){
+        
+        lemimg.src = "lemon_spin2.gif";
+        
+    }
+    
+    if (upam >= 50){
+
+        lemimg.src = "lemon_spin3.gif";
+
+    }
+
+    if (upam >= 250){
+
+        lemimg.src = "lemon_spin4.gif";
+
+    }
+
+    if (upam >= 500){
+
+        lemimg.src = "lemon_spin5.gif";
+
+    }
+
+    if (upam >= 1000){
+
+        lemimg.src = "lemon_spin6.gif";
+
+    }
+
+    if (upam >= 1500){
+
+        lemimg.src = "lemon_spin7.gif";
+
+    }
+
+    if (upam >= 2000){
+
+        lemimg.src = "lemon_spin8.gif";
+
+    }
+
+    if (upam >= 2500){
+
+        lemimg.src = "lemon_spin9.gif";
+
+    }
+
+    if (upam >= 3000){
+
+        lemimg.src = "lemon_spin10.gif";
+
+    }
+
+
+
+}
+
+
+
+
+function upgrade(){
+    if ('click', count >= cost10){
+        
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 1;
+        
+        document.getElementById("count").innerText = count;
+        count = count - cost10;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 1;
+
+        document.getElementById("cost10").innerText = cost10;
+        cost10 = cost10 * 2;
+        
+    }
+
+    
+    
+
+
+
+}
+
+
+function upgrade100(){
+    if ('click', count >= cost100){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 2;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost100;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 10;
+
+
+        document.getElementById("cost100").innerText = cost100;
+        cost100 = cost100 * 2;
+
+    }
+
+
+}
+
+function upgrade1000(){
+    if ('click', count >= cost1k){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 3;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost1k;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 100;
+
+
+        document.getElementById("cost1k").innerText = cost1k;
+        cost1k = cost1k * 2;
+
+    }
+
+
+
+}
+
+function upgrade10k(){
+    if ('click', count >= cost10k){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 4;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost10k;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 1000;
+
+        document.getElementById("cost10k").innerText = cost10k;
+        cost10k = cost10k * 2;
+
+    }
+
+
+}
+
+function upgrade100k(){
+    if ('click', count >= cost100k){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 5;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost100k;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 10000;
+
+        document.getElementById("cost100k").innerText = cost100k;
+        cost100k = cost100k * 2;
+
+    }
+
+
+
+}
+
+
+function upgrade1m(){
+    if ('click', count >= cost1m){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 6;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost1m;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 100000;
+
+        document.getElementById("cost1m").innerText = cost1m;
+        cost1m = cost1m * 2;
+
+    }
+
+
+}
+
+function upgrade10m(){
+    if ('click', count >= cost10m){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 7;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost10m;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 1000000;
+
+        document.getElementById("cost10m").innerText = cost10m;
+        cost10m = cost10m * 2;
+
+    }
+
+
+}
+
+function upgrade100m(){
+    if ('click', count >= cost100m){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 8;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost100m;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 10000000;
+
+        document.getElementById("cost100m").innerText = cost100m;
+        cost100m = cost100m * 2;
+
+    }
+
+
+}
+
+function upgrade1B(){
+    if ('click', count >= cost1b){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 9;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost1b;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 100000000;
+
+        document.getElementById("cost1b").innerText = cost1b;
+        cost1b = cost1b * 2;
+
+    }
+
+
+}
+
+
+function upgrade10B(){
+    if ('click', count >= cost10b){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 10;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost10b;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 1000000000;
+
+        document.getElementById("cost10b").innerText = cost10b;
+        cost10b = cost10b * 2;
+
+    }
+
+
+}
+
+
+function upgrade100B(){
+    if ('click', count >= cost100b){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 11;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost100b;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 10000000000;
+
+        document.getElementById("cost100b").innerText = cost100b;
+        cost100b = cost100b * 2;
+
+    }
+
+
+}
+
+
+function upgrade1T(){
+    if ('click', count >= cost1t){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 12;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost1t;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 100000000000;
+
+
+        document.getElementById("cost1t").innerText = cost1t;
+        cost1t = cost1t * 2;
+
+    }
+
+
+}
+
+
+function upgrade10T(){
+    if ('click', count >= cost10t){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 13;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost10t;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 1000000000000;
+
+        document.getElementById("cost10t").innerText = cost10t;
+        cost10t = cost10t * 2;
+
+    }
+
+
+}
+
+function upgrade100T(){
+    if ('click', count >= cost100t){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 14;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost100t;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 10000000000000;
+
+        document.getElementById("cost100t").innerText = cost100t;
+        cost100t = cost100t * 2;
+
+    }
+
+
+}
+
+function upgrade1Q(){
+    if ('click', count >= cost1q){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 15;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost1q;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 100000000000000;
+
+        document.getElementById("cost1q").innerText = cost1q;
+        cost1q = cost1q * 2;
+
+    }
+
+
+}
+
+
+function upgrade10Q(){
+    if ('click', count >= cost10q){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 16;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost10q;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 1000000000000000;
+
+        document.getElementById("cost10q").innerText = cost10q;
+        cost10q = cost10q * 2;
+
+    }
+
+
+}
+
+function upgrade100Q(){
+    if ('click', count >= cost100q){
+        document.getElementById("upam").innerText = upam;
+        upam = upam + 17;
+
+        document.getElementById("count").innerText = count;
+        count = count - cost100q;
+
+        document.getElementById("mult").innerText = mult;
+        mult = mult + 10000000000000000;
+
+        document.getElementById("cost100q").innerText = cost100q;
+        cost100q = cost100q * 2;
+
+    }
+
+
+}
+
+
+
+
+function upmult30(){
+
+document.getElementById("count").innerText = count;
+count = count * 2;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var upmultxTC = 0
+
+function multxT(){
+    if ('click', count >= 1000000){
+    document.getElementById("upmultxTV").innerText = upmultxTC;
+    upmultxTC = upmultxTC + 10;
+    
+    document.getElementById("count").innerText = count;
+    count = count - 1000000;
+
+    setInterval(upmult30, 30000);
+}
+
+if (upmultxTC >= 1){
+
+    const element = document.querySelector('.hidden2');
+    element.classList.add('hid');
+
+}
+
+
+
+
+}
+
+function upmultadd(){
+
+document.getElementById("upam").innerText = upam;
+upam = upam + 1;
+
+}
+
+
+
+var autoam = 0
+
+function auto(){
+    if ('click', count >= 100000){
+        document.getElementById("autoam").innerText = autoam;
+        autoam = autoam + 1;
+
+        document.getElementById("count").innerText = count;
+        count = count - 100000;
+
+        
+
+        setInterval(incount, 5000);
+        
+        setInterval(upmultadd, 5000);
+        
+
+        
+    }
+
+    if (autoam >= 1){
+
+        const element = document.querySelector('.hidden');
+        element.classList.add('hid');
+
+        
+
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
